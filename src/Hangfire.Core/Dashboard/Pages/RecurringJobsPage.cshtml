@@ -57,7 +57,7 @@
                             @Strings.RecurringJobsPage_TriggerNow
                         </button>
                     }
-                    @if (!IsReadOnly)
+                    @if (!IsReadOnly && CanRemoveRecurringJobs)
                     {
                         <button class="js-jobs-list-command btn btn-sm btn-default"
                                 data-url="@Url.To("/recurring/remove")"

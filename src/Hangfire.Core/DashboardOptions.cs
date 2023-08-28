@@ -86,6 +86,11 @@ namespace Hangfire
             }
         }
 
+        /// <summary>
+        /// If the remove button on the recurring jobs page is displayed
+        /// </summary>
+        public bool CanRemoveRecurringJobs { get; set; } = true;
+
         public Func<DashboardContext, bool> IsReadOnlyFunc { get; set; }
         
         /// <summary>

@@ -59,6 +59,8 @@ namespace Hangfire.Dashboard
 
         public string RequestPath => Request.Path;
 
+        public bool CanRemoveRecurringJobs => Context.Options.CanRemoveRecurringJobs;
+
         public bool IsReadOnly => Context.IsReadOnly;
         
         /// <exclude />
